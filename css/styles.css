@@ -1,3 +1,10 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
 body {
 	background-color: hsl(30, 54%, 90%);
 	font-family: 'Outfit',sans-serif;
@@ -11,6 +18,7 @@ body {
 
 img {
 	width: 100%;
+	max-width: 960px;
 	display: block;
 }
 
@@ -51,42 +59,35 @@ h3 {
 
 .preparation-time ul {
 	list-style: none;
-	padding-left: 0;
+	padding: 0;
 	margin: 0;
 }
 
-.preparation-time li {
-	position: relative;
-	padding-left: 40px;	
-	margin-bottom: 5px;
+.prepa-content {
+	display: inline-block;		
+	padding-left: 33px;
 }
 
-.preparation-time li.total::before{
-	content: "•";
-	color: hsl(332, 51%, 32%);
-	font-size: 15px;
-	position: absolute;	
-	left: 7px;
-	padding-top: 12px;
-}
+
+.preparation-time li {
+	display: flex;
+	align-items: center;
+	position: relative;
+	padding-left: 5px;
+	margin-bottom: 5px;
+ }
 
 .preparation-time li::before {
-	content: "•";
-	color: hsl(332, 51%, 32%);
-	font-size: 15px;
-	position: absolute;	
-	left: 7px;
+    content: "•";
+    color: hsl(332, 51%, 32%);    
+    position: absolute;
+	font-size: 25px;
+
 }
 
-.prepa-list {
+
+.bold {
 	font-weight: bold;
 }
 
-
-
-
-
-
-
-	
 
