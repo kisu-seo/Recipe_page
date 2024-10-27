@@ -13,7 +13,10 @@ body {
 	margin: 0;
 	font-size: 16px;
 	line-height: 1.5;
-	color: hsl(30, 10%, 34%)
+	color: hsl(30, 10%, 34%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 img {
@@ -25,10 +28,10 @@ img {
 .panel {
 	background-color: white;
 	width: 100%;
-	max-width: 960px;
+	max-width: 700px;	
 }
 
-header, .ingredients, .instructions {
+header, .ingredients, .instructions, .nutrition, footer {
 	padding: 0 30px;
 }
 
@@ -137,11 +140,67 @@ ol {
 }
 
 .instructions-content {		
-	padding-left: 18px;	
+	padding-left: 18px;
+	margin-bottom: 8px;	
 }
 
 .instructions-content::marker {
 	color: hsl(14, 45%, 36%);
 	font-weight: bold;
 }
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.table-row {
+	border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.table-row:last-child {
+	border-bottom: 0;
+}
+
+td {
+	padding: 10px 0;
+}
+
+td:nth-child(1) {
+	padding-left: 25px;
+	width: 50%;
+	box-sizing: border-box;
+}
+
+td:nth-child(2) {
+	color: hsl(14, 45%, 36%);
+	font-weight: bold;
+	padding-left: 8px;
+}
+
+footer {
+	margin-top: 30px;
+	text-align: center;
+}
+
+footer a {
+	text-decoration: none;
+}
+
+@media (min-width: 700px) {
+	
+	.panel {
+		border-radius: 20px;
+	}
+
+	.image {
+		padding: 30px 30px 0 30px;
+	}
+
+	img {		
+		border-radius: 20px;
+	}
+}
+
 
