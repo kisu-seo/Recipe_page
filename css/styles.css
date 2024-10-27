@@ -13,7 +13,6 @@ body {
 	font-size: 16px;
 	line-height: 1.5;
 	color: hsl(30, 10%, 34%)
-
 }
 
 img {
@@ -28,8 +27,8 @@ img {
 	max-width: 960px;
 }
 
-header {
-	padding: 0 30px 0 30px;
+header, .ingredients, .instructions {
+	padding: 0 30px;
 }
 
 header p {
@@ -38,10 +37,11 @@ header p {
 }
 
 h1 {
+	font-size: 2.3rem;
 	font-family: 'Young Serif', sans-serif;
 	color: hsl(24, 5%, 18%);
 	line-height: 1;
-	margin-top: 30px;
+	margin-top: 40px;
 }
 
 .preparation-time {
@@ -82,12 +82,56 @@ h3 {
     color: hsl(332, 51%, 32%);    
     position: absolute;
 	font-size: 25px;
-
 }
-
 
 .bold {
 	font-weight: bold;
 }
 
+h2 {
+	font-size: 1.7rem;
+	font-family: 'Young Serif', sans-serif;
+	color: hsl(14, 45%, 36%);
+	margin-top: 30px;
+	margin-bottom: 20px;
 
+}
+
+.ingredients ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.ingredients li {
+	display: flex;
+	align-items: center;
+	position: relative;
+	margin-bottom: 8px;
+}
+
+.ingredients-content {
+	display: inline-block;
+	padding-left: 35px;
+}
+
+.ingredients li::before {
+    content: "•";
+    color: hsl(332, 51%, 32%);    
+    position: absolute;
+	font-size: 25px;
+	padding-left: 5px;
+}
+
+hr {
+	border: none; 
+    height: 1px; 
+    background-color: hsl(30, 18%, 87%);
+	margin: 30px 30px 0 30px;	
+}
+
+.instructions ol {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
