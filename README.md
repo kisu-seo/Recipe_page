@@ -33,4 +33,4 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 ## Author
 
 - Website - [Danny Seo](https://github.com/kisu-seo/Recipe_page)
-- Frontend Mentor - [@kisu-seo](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@kisu-seo](https://www.frontendmentor.io/profile/kisu-seo)
