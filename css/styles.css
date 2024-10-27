@@ -8,8 +8,7 @@
 body {
 	background-color: hsl(30, 54%, 90%);
 	font-family: 'Outfit',sans-serif;
-	font-weight: 300;
-	min-height: 100vh;
+	font-weight: 300;	
 	margin: 0;
 	font-size: 16px;
 	line-height: 1.5;
@@ -17,6 +16,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	min-height: 100vh;
 }
 
 img {
@@ -27,7 +27,7 @@ img {
 
 .panel {
 	background-color: white;
-	width: 100%;
+	width: 100%;	
 	max-width: 700px;	
 }
 
